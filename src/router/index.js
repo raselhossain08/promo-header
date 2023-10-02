@@ -5,6 +5,10 @@ import ProductView from '../views/Products/Product.vue'
 import LoginView from '../views/Auth/Login.vue'
 import RegisterView from '../views/Auth/Register.vue'
 import CartView from '../views/Cart/Cart.vue'
+import DashboardView from '../views/dashboard/DashboardView.vue'
+import AdvertiserView from '../views/Advertiser/Advertiser.vue'
+import CommentsView from '../views/Comments/Comments.vue'
+import TrackView from '../views/TrackOrder/TrackOrder.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,9 +24,20 @@ const router = createRouter({
       component: LoginView
     }  ,  
     {
+      path: '/dashboard',
+      name: 'DashboardView',
+      component: DashboardView
+    }
+    ,  
+    {
       path: '/products',
       name: 'ProductView',
       component: ProductView
+    } 
+    ,{
+      path: '/comments',
+      name: 'CommentsView',
+      component: CommentsView
     }
     ,
     {
@@ -30,6 +45,19 @@ const router = createRouter({
       name: 'ProductDetails',
       component: ProductDetails
     }    ,
+
+    {
+      path: '/advertiser',
+      name: 'AdvertiserView',
+      component: AdvertiserView
+    }  
+    ,
+    {
+      path: '/track-order',
+      name: 'TrackView',
+      component: TrackView
+    }  
+    ,
 
     {
       path: '/cart',
