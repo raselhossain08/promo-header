@@ -150,15 +150,15 @@ export default {
                 </button>
               </div>
 
-              <div class="pt-5 overflow-y-auto " style="height: 70vh;">
+              <div class="pt-5 overflow-x-hidden overflow-y-auto" style="height: 70vh;">
                 <div class="w-full mb-5 border-b" v-for="(x, index) in product" :key="index">
-                  <router-link to="/product-details" class="flex ">
-                    <div class="w-1/4 px-5">
+                  <router-link to="/product-details" class="row ">
+                    <div class="px-12 col-sm-12 col-md-4 col-12">
                       <div v-for="(its, id) in x.gallery" :key="id">
                         <img v-bind:src="its.productsPhoto" alt="" class="w-full rounded-md h-fit" />
                       </div>
                     </div>
-                    <div class="w-3/4 px-5">
+                    <div class="px-5 col-sm-12 col-md-8 col-12">
                       <div class="flex items-center justify-between font-bold ">
                         <h4>{{ x.name }}</h4>
                         <button type="button" class="text-red-500">Remove</button>
