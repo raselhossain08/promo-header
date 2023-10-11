@@ -63,13 +63,13 @@ export default {
           </button>
           <button
             type="submit"
-            class="mx-auto text-white bg-green-600 shadow-lg btn submit-btn btn-block w-50"
+            class="mx-auto text-white bg-black shadow-lg btn submit-btn btn-block w-50"
           >
-            Start Business Account
+            Login
           </button>
           <p class="py-3 text-center text-uppercase">
-            Creante an new account ?
-            <router-link to="/register" class="text-blue-700">Signup</router-link>
+            Create New Account?
+            <router-link to="/register" class="text-green-500">Signup</router-link>
           </p>
         </form>
         <!-- forget -->
@@ -180,14 +180,14 @@ export default {
           </div>
           <button
             type="submit"
-            class="mx-auto text-white bg-green-600 shadow-lg btn submit-btn btn-block w-50"
+            class="mx-auto text-white bg-black shadow-lg btn submit-btn btn-block w-50"
           >
-            Start Business Account
+            Login
           </button>
 
           <p class="py-3 text-center text-uppercase">
-            Creante an new account ?
-            <router-link to="/register" class="text-blue-700">Signup</router-link>
+            Create New Account? 
+            <router-link to="/register" class=" text-green-500">Signup</router-link>
           </p>
         </form>
       </div>
